@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Filter UI</title>
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body class="bg-black">
+
+  <header>
+    <div>
+      <div class="brand">LUXE<span>.</span>SHOP</div>
+      <div class="tagline">Curated · Premium · Unique</div>
+    </div>
+    <div class="search-wrap">
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <circle cx="11" cy="11" r="8" />
+        <path d="m21 21-4.35-4.35" />
+      </svg>
+      <input type="text" id="searchInput" placeholder="Search products…" autocomplete="off" />
+    </div>
+  </header>
+
+  <main>
+    <div class="filters" id="filterBar"></div>
+    <div class="meta">
+      <p class="count">Showing <strong id="countNum">0</strong> products</p>
+    </div>
+    <div id="grid"></div>
+    <div id="empty">
+      <div class="emoji">🔍</div>
+      <h3>Nothing found</h3>
+      <p>Try a different keyword or category.</p>
+    </div>
+  </main>
+
+
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>
